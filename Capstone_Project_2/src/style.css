@@ -1,6 +1,17 @@
+@font-face {
+    font-family: 'Brittany';
+    src: url(./BrittanySignature.ttf);
+}
 .custom-container{
     background: url(./assets/bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: left;
+}
+.gradient{
+    background: rgb(255,85,129);
+    background: -moz-radial-gradient(circle, rgba(255,85,129,0.6222864145658263) 13%, rgba(255,149,0,0.3477766106442577) 32%, rgba(82,82,82,0) 48%);
+    background: -webkit-radial-gradient(circle, rgba(255,85,129,0.6222864145658263) 13%, rgba(255,149,0,0.3477766106442577) 32%, rgba(82,82,82,0) 48%);
+    background: radial-gradient(circle, rgba(255,85,129,0.6222864145658263) 13%, rgba(255,149,0,0.3477766106442577) 32%, rgba(82,82,82,0) 48%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff5581",endColorstr="#525252",GradientType=1);
 }
