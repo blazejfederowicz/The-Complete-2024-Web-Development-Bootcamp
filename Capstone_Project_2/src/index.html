@@ -11,7 +11,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
-<body class="h-full overflow-x-hidden font-[Montserrat,sans]">
+<body class="h-full overflow-x-hidden font-[Montserrat,sans] scroll-smooth">
     <section id="header" class=" w-full custom-container xl:h-full relative">
         <nav class=" bg-black/25 sm:bg-transparent sm:absolute top-0 inset-x-0 z-50">
             <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
@@ -116,9 +116,32 @@
         </div>
         
     </section>
-    <section>
-        <div class="container mx-auto">
-            fdfd
+    <section class="pt-1" id="about">
+        <div class="container xl:px-10 mx-auto">
+            <div class="flex flex-1 sm:block md:flex flex-col sm:flex-row md:justify-end md:items-center">
+              <div class="w-full ">
+                <div class="wraper max-w-[30em] px-5  md:mx-auto">
+                  <h1 class="text-5xl md:text-6xl lg:text-7xl text-zinc-800 font-bold mb-10">About Me</h1>
+                  <p class="text-sm sm:text-base text-zinc-500 lg:text-lg font-semibold">I finished secondary school with IT specialist degree. I pationate about building web applications that users can feel comfortable interacting with. I love playing guitar and to release stress I work out at the gym.</p>
+                </div>
+              </div>
+              <div class="overflow-auto w-full">
+                <div class="grid grid-cols-3 w-[500px] gap-10 grid-rows-1 overflow-hidden mt-10 sm:mt-0 lg:ms-0 px-5 justify-self-end sm:justify-self-auto  sm:float-end md:float-none md:justify-self-start">
+                  <div class="lg:pt-64 lg:order-none sm:pt-64 pt-32 sm:order-none md:order-1 md:pt-32">
+                    <img src="./assets/red.jpg" class="rounded-xl " alt="red-head">
+                  </div>
+                  <div class="sm:pt-32">
+                    <img src="./assets/black.jpg" class="mb-[2.5em] rounded-xl" alt="black">
+                    <img src="./assets/asian.jpg" class="rounded-xl" alt="asian">
+                  </div>
+                  <div class="pt-32 sm:pt-0">
+                    <img src="./assets/brown.jpg" class="mb-[2.5em] rounded-xl" alt="brown">
+                    <img src="./assets/glasses.jpg" class="rounded-xl" alt="glasses">
+                  </div>
+                </div>
+              </div>
+              
+            </div>
         </div>
     </section>
     <script>
