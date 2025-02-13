@@ -11,9 +11,9 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
-<body class="h-full overflow-x-hidden font-[Montserrat,sans] scroll-smooth">
-    <section id="header" class=" w-full custom-container xl:h-full relative">
-        <nav class=" bg-black/25 sm:bg-transparent sm:absolute top-0 inset-x-0 z-50">
+<body class="h-full overflow-x-hidden font-[Montserrat,sans] scroll-smooth bg-gray-50">
+    <section id="header" class=" w-full custom-container xl:h-full relative ">
+        <nav class=" bg-black/25 sm:bg-transparent sm:absolute top-0 inset-x-0 z-50 ">
             <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
               <div class="relative flex h-16 items-center justify-between">
                 <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -116,35 +116,131 @@
         </div>
         
     </section>
-    <section class="pt-1" id="about">
+    <section class="pt-1 projects-gradient" id="about">
         <div class="container xl:px-10 mx-auto">
             <div class="flex flex-1 sm:block md:flex flex-col-reverse sm:flex-row-reverse md:justify-end md:items-center">
               <div class="overflow-hidden w-full sm:w-auto md:w-full sm:float-end md:float-none sm:-ms-64 md:-ms-0 sm:mt-32 md:mt-0 " style="shape-outside: inset(10px 0px 10px 0px);">
                 <div class="grid grid-cols-3 w-[500px] gap-10 grid-rows-1 mt-10 sm:mt-0 lg:ms-5 px-5 justify-self-end md:justify-self-start">
                   <div class="lg:pt-64 lg:order-none sm:pt-64 pt-32 sm:order-none md:order-1 md:pt-32">
-                    <img src="./assets/red.jpg" class="rounded-xl " alt="red-head">
+                    <img src="./assets/red.jpg" class="rounded-xl transition-transform duration-200 ease-in-out hover:md:scale-110" alt="red-head">
                   </div>
-                  <div class="sm:pt-32">
-                    <img src="./assets/black.jpg" class="mb-[2.5em] rounded-xl" alt="black">
-                    <img src="./assets/asian.jpg" class="rounded-xl" alt="asian">
+                  <div class="sm:pt-32 md:pb-3">
+                    <img src="./assets/black.jpg" class="mb-[2.5em] rounded-xl transition-transform duration-200 ease-in-out hover:md:scale-110" alt="black">
+                    <img src="./assets/asian.jpg" class="rounded-xl transition-transform duration-200 ease-in-out hover:md:scale-110" alt="asian">
                   </div>
-                  <div class="pt-32 sm:pt-0">
-                    <img src="./assets/brown.jpg" class="mb-[2.5em] rounded-xl" alt="brown">
-                    <img src="./assets/glasses.jpg" class="rounded-xl" alt="glasses">
+                  <div class="pt-32 sm:pt-0 md:pt-3">
+                    <img src="./assets/brown.jpg" class="mb-[2.5em] rounded-xl transition-transform duration-200 ease-in-out hover:md:scale-110" alt="brown">
+                    <img src="./assets/glasses.jpg" class="rounded-xl transition-transform duration-200 ease-in-out hover:md:scale-110" alt="glasses">
                   </div>
                 </div>
               </div>
               <div class="w-full mt-[2em] sm:mt-0">
                 <div class="wraper max-w-[30em] px-5 md:ms-auto md:me-auto lg:me-10 ">
                   <h1 class="text-5xl md:text-6xl lg:text-7xl text-zinc-800 font-bold mb-10">About Me</h1>
-                  <p class="text-sm sm:text-base text-zinc-500 lg:text-lg font-semibold">I finished secondary school with IT specialist degree. I pationate about building web applications that users can feel comfortable interacting with. I love playing guitar and to release stress I work out at the gym.</p>
+                  <p class="text-sm sm:text-base text-gray-600 lg:text-lg font-medium">I finished secondary school with IT specialist degree. I am pationate about building web applications that users can feel comfortable interacting with. I love playing guitar and to release stress I work out at the gym.</p>
                 </div>
               </div>
             </div>
         </div>
     </section>
-    <section>
-      
+    <section class=" sm:mt-96 md:mt-0">
+      <div class=" py-24 sm:py-32">
+        <div class="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
+          <p class="mx-auto mt-2 max-w-lg text-center text-4xl font-semibold tracking-tight text-balance text-zinc-800 sm:text-5xl">My projects</p>
+          <div class="mt-10 grid gap-4 sm:mt-16 lg:grid-cols-3 lg:grid-rows-2">
+            <div class="relative lg:row-span-2">
+              <div class="absolute inset-px rounded-lg bg-white lg:rounded-l-[2rem]"></div>
+              <div class="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] lg:rounded-l-[calc(2rem+1px)]">
+                <div class="px-8 pt-8 pb-3 sm:px-10 sm:pt-10 sm:pb-0">
+                  <p class="mt-2 text-lg font-medium tracking-tight text-gray-950 max-lg:text-center">Mobile friendly</p>
+                  <p class="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">Markdown previewer that allowes making pages even on the phone.</p>
+                </div>
+                <div class="@container relative overflow-y-visible min-h-[30rem] w-full grow max-lg:mx-auto max-lg:max-w-sm">
+                  <div class="absolute cursor-pointer h-[500px] duration-300 ease-in-out hover:-mt-6 inset-x-10 top-10 bottom-0 overflow-hidden rounded-t-[12cqw] border-x-[3cqw] border-t-[3cqw] border-gray-700 bg-gray-900 shadow-2xl">
+                    <a href="https://markdown-landing-page.vercel.app" target="_blank">
+                      <img class="size-full object-cover object-top" src="./assets/phone.jpg" alt="phone">
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="pointer-events-none absolute inset-px rounded-lg ring-1 shadow-sm ring-black/5 lg:rounded-l-[2rem]"></div>
+            </div>
+            <div class="relative max-lg:row-start-1">
+              <div class="absolute inset-px rounded-lg bg-white max-lg:rounded-t-[2rem]"></div>
+              <div class="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] max-lg:rounded-t-[calc(2rem+1px)]">
+                <div class="px-8 pt-8 sm:px-10 sm:pt-10">
+                  <p class="mt-2 text-lg font-medium tracking-tight text-gray-950 max-lg:text-center">Performance</p>
+                  <p class="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">Slow loading pages? Forget about it, here we don't waste time.</p>
+                </div>
+                <div class="flex flex-1 items-center justify-center px-8 max-lg:pt-10 max-lg:pb-12 sm:px-10 lg:pb-2">
+                  <img class="w-full max-lg:max-w-xs" src="https://tailwindui.com/plus-assets/img/component-images/bento-03-performance.png" alt="">
+                </div>
+              </div>
+              <div class="pointer-events-none absolute inset-px rounded-lg ring-1 shadow-sm ring-black/5 max-lg:rounded-t-[2rem]"></div>
+            </div>
+            <div class="relative max-lg:row-start-3 lg:col-start-2 lg:row-start-2">
+              <div class="absolute inset-px rounded-lg bg-white"></div>
+              <div class="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)]">
+                <div class="px-8 pt-8 sm:px-10 sm:pt-10">
+                  <p class="mt-2 text-lg font-medium tracking-tight text-gray-950 max-lg:text-center">Security</p>
+                  <p class="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">You can login safely, without worring about your data being leaked.</p>
+                </div>
+                <div class="@container flex flex-1 items-center max-lg:py-6 lg:pb-2">
+                  <img class="h-[min(152px,40cqw)] object-cover" src="https://tailwindui.com/plus-assets/img/component-images/bento-03-security.png" alt="">
+                </div>
+              </div>
+              <div class="pointer-events-none absolute inset-px rounded-lg ring-1 shadow-sm ring-black/5"></div>
+            </div>
+            <div class="relative lg:row-span-2">
+              <div class="absolute inset-px rounded-lg bg-white max-lg:rounded-b-[2rem] lg:rounded-r-[2rem]"></div>
+              <div class="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] max-lg:rounded-b-[calc(2rem+1px)] lg:rounded-r-[calc(2rem+1px)]">
+                <div class="px-8 pt-8 pb-3 sm:px-10 sm:pt-10 sm:pb-0">
+                  <p class="mt-2 text-lg font-medium tracking-tight text-gray-950 max-lg:text-center">Powerful APIs</p>
+                  <p class="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">A quote machine is a good example how to generate random quotes.</p>
+                </div>
+                <div class="relative min-h-[30rem] w-full grow">
+                  <a href="https://quote-machine-rep.vercel.app" target="_blank">
+                    <div class="absolute hover:md:-mt-6 hover:md:-ms-3 duration-300 ease-in-out cursor-pointer top-10 right-0 bottom-0 left-10 overflow-hidden rounded-tl-xl bg-gray-900 shadow-2xl">
+                      <div class="flex bg-gray-800/40 ring-1 ring-white/5">
+                        <div class="-mb-px flex text-sm/6 font-medium text-gray-400">
+                          <div class="border-r border-b border-r-white/10 border-b-white/20 bg-white/5 px-4 py-2 text-white">HomeComponent.jsx</div>
+                          <div class="border-r border-gray-600/10 px-4 py-2">App.jsx</div>
+                        </div>
+                      </div>
+                      <div class="px-6 pt-6 pb-14">
+                        <pre class="text-[0.8125rem]/6 text-gray-300" style="tab-size: 2">
+<code>import <span class="text-[#7dd3fc]">ButtonComponent</span> from <span class="text-emerald-300">'./Buttons/ButtonComponent'</span>
+
+const <span class="text-indigo-400">HeroSection</span> = ({<span class="text-[#7dd3fc]">ctaRef</span>}) =>{
+  const <span class="text-indigo-400">handleScroll</span> = () =>{
+    <span class="text-indigo-400">if</span>(<span class="text-[#7dd3fc]">ctaRef</span>.<span class="text-[#7dd3fc]">current</span>){
+      <span class="text-[#7dd3fc]">ctaRef</span>.<span class="text-[#7dd3fc]">current</span>.<span class="text-emerald-300">scrollIntoView</span>();
+    }
+  };
+
+	return (
+		&lt;<span class="text-indigo-400">div</span> id="<span class="text-emerald-300">hero</span>" className="<span class="text-emerald-300">hero-container</span>">&gt;
+			&lt;<span class="text-indigo-400">div</span>  className="<span class="text-emerald-300">hero-heading</span>"&gt;
+        &lt;<span class="text-indigo-400">div</span>  className="<span class="text-emerald-300">hero-content</span>"&gt;
+				  {<span class="text-gray-500">/* ... */</span>}
+        &lt;/<span class="text-indigo-400">div</span>&gt;
+        &lt;<span class="text-indigo-400">ButtonComponent</span>  purple="<span class="text-emerald-300">Get Inspired</span>" white="<span class="text-emerald-300">Learn More</span>"
+         onClickWhite={() =><span class="text-[#7dd3fc]">handleFilter</span>()} onClickpurple={<span class="text-[#7dd3fc]">handleScroll</span>} />&gt;
+			&lt;/<span class="text-indigo-400">div</span>&gt;
+		&lt;/<span class="text-indigo-400">div</span>&gt;
+	)
+}</code>
+                        </pre>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="pointer-events-none absolute inset-px rounded-lg ring-1 shadow-sm ring-black/5 max-lg:rounded-b-[2rem] lg:rounded-r-[2rem]"></div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <script>
         const menu_button = document.querySelector('#menu-button');

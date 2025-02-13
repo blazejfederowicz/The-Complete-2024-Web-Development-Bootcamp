@@ -15,3 +15,11 @@
     background: radial-gradient(circle, rgba(255,85,129,0.6222864145658263) 13%, rgba(255,149,0,0.3477766106442577) 32%, rgba(82,82,82,0) 48%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff5581",endColorstr="#525252",GradientType=1);
 }
+
+.projects-gradient{
+    background: rgb(249,250,251);
+    background: -moz-linear-gradient(0deg, rgba(249,250,251,1) 0%, rgba(255,255,255,1) 70%);
+    background: -webkit-linear-gradient(0deg, rgba(249,250,251,1) 0%, rgba(255,255,255,1) 70%);
+    background: linear-gradient(0deg, rgba(249,250,251,1) 0%, rgba(255,255,255,1) 70%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f9fafb",endColorstr="#ffffff",GradientType=1);
+}
