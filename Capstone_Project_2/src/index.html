@@ -143,7 +143,7 @@
             </div>
         </div>
     </section>
-    <section class=" sm:mt-96 md:mt-0">
+    <section id="projects" class=" sm:mt-96 md:mt-0">
       <div class=" py-24 sm:py-32">
         <div class="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
           <p class="mx-auto mt-2 max-w-lg text-center text-4xl font-semibold tracking-tight text-balance text-zinc-800 sm:text-5xl">My projects</p>
@@ -156,7 +156,7 @@
                   <p class="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">Markdown previewer that allowes making pages even on the phone.</p>
                 </div>
                 <div class="@container relative overflow-y-visible min-h-[30rem] w-full grow max-lg:mx-auto max-lg:max-w-sm">
-                  <div class="absolute cursor-pointer h-[500px] duration-300 ease-in-out hover:-mt-6 inset-x-10 top-10 bottom-0 overflow-hidden rounded-t-[12cqw] border-x-[3cqw] border-t-[3cqw] border-gray-700 bg-gray-900 shadow-2xl">
+                  <div class="absolute cursor-pointer h-[500px] duration-300 ease-in-out hover:md:-mt-6 inset-x-10 top-10 bottom-0 overflow-hidden rounded-t-[12cqw] border-x-[3cqw] border-t-[3cqw] border-gray-700 bg-gray-900 shadow-2xl">
                     <a href="https://markdown-landing-page.vercel.app" target="_blank">
                       <img class="size-full object-cover object-top" src="./assets/phone.jpg" alt="phone">
                     </a>
@@ -240,6 +240,95 @@ const <span class="text-indigo-400">HeroSection</span> = ({<span class="text-[#7
             </div>
           </div>
         </div>
+      </div>
+    </section>
+    <section id="footer">
+      <div class="container mx-auto sm:px-5">
+        <footer class=" bg-slate-300 sm:rounded-t-3xl p-5 md:p-10 xl:p-14">
+          <div class="grid grid-cols-6 mb-20 gap-3">
+            <div class="flex flex-col sm:w-2/3 col-span-6 md:col-span-3">
+              <div class="flex shrink-0 items-center mb-1 text-4xl text-white">
+                <i class="fa-brands  fa-html5"></i>
+              </div>
+              <p class="text-sm mb-2 text-sky-950">Stay in the loop and sign up for the Wardiere newsletter:</p>
+              <div class="relative">
+                <input type="email" id="email" name="email" placeholder="Enter your email" class="bg-slate-50 text-xs rounded-3xl py-3 px-6 w-full text-zinc-500 border-2 border-zinc-300 focus:border-zinc-400 outline-none" >
+                <button class=" rounded-full bg-sky-900 duration-100 ease-in-out absolute w-[2em] h-[2em] text-white top-0 right-0 -translate-x-1 translate-y-1.5 cursor-pointer hover:md:bg-blue-950 active:bg-blue-950">
+                  <i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+            <div class="flex flex-1 flex-col col-span-3 sm:col-span-2 md:col-span-1">
+              <div class="mb-2">
+                <h1 class="text-sky-950 font-bold text-sm">Company</h1>
+              </div>
+              <div class="flex flex-col">
+                <div class="basis-0  mb-1">
+                  <a href="#header" class="text-xs text-sky-950 duration-200 ease-in-out hover:md:ms-2 active:text-sky-900">Home</a>
+                </div>
+                <div class="mb-1 basis-0">
+                  <a href="#about" class="text-xs text-sky-950 duration-200 ease-in-out hover:md:ms-2 active:text-sky-900">About</a>
+                </div>
+                <div class="mb-1 basis-0">
+                  <a href="#projects" class="text-xs text-sky-950 duration-200 ease-in-out hover:md:ms-2 active:text-sky-900">Projects</a>
+                </div>
+                <div class="mb-1 basis-0">
+                 <a href="#header" class="text-xs text-sky-950 duration-200 ease-in-out hover:md:ms-2 active:text-sky-900">Pricing</a>
+                </div>
+                <div class="mb-1 basis-0">
+                  <a href="#header" class="text-xs text-sky-950 duration-200 ease-in-out hover:md:ms-2">Team</a>
+                </div>
+                <div class="mb-1 basis-0">
+                  <a href="#header" class="text-xs text-sky-950 duration-200 ease-in-out hover:md:ms-2 active:text-sky-900">Career</a>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-1 flex-col col-span-3 sm:col-span-2 md:col-span-1">
+              <div class="mb-2">
+                <h1 class="text-sky-950 font-bold text-sm">Documentation</h1>
+              </div>
+              <div class="flex flex-col">
+                <div class="basis-0 mb-1">
+                  <a href="#header" class="text-xs text-sky-950 duration-200 ease-in-out hover:md:ms-2 active:text-sky-900">Help Centre</a>
+                </div>
+                <div class="mb-1 basis-0">
+                  <a href="#footer" class="text-xs text-sky-950 duration-200 ease-in-out hover:md:ms-2 active:text-sky-900">Contact</a>
+                </div>
+                <div class="mb-1 basis-0">
+                  <a href="#header" class="text-xs text-sky-950 duration-200 ease-in-out hover:md:ms-2 active:text-sky-900">FAQ</a>
+                </div>
+                <div class="mb-1 basis-0">
+                 <a href="#header" class="text-xs text-sky-950 duration-200 ease-in-out hover:md:ms-2 active:text-sky-900">Privacy Policy</a>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-1 flex-col col-span-6 sm:col-span-2 md:col-span-1 md:ms-6 lg:ms-0">
+              <div class="mb-2">
+                <h1 class="text-sky-950 font-bold text-sm">Social</h1>
+              </div>
+              <div class="flex flex-col">
+                <div class="mb-1 basis-0">
+                  <a href="https://www.facebook.com/" target="_blank" class="text-xs text-sky-950 duration-200 ease-in-out hover:md:ms-2 active:text-sky-900">Facebook</a>
+                </div>
+                <div class="mb-1 basis-0">
+                 <a href="https://www.instagram.com/" target="_blank" class="text-xs text-sky-950 duration-200 ease-in-out hover:md:ms-2 active:text-sky-900">Instagram</a>
+                </div>
+                <div class="mb-1 basis-0">
+                  <a href="https://www.youtube.com/" target="_blank" class="text-xs text-sky-950 duration-200 ease-in-out hover:md:ms-2">Youtube</a>
+                </div>
+                <div class="mb-1 basis-0">
+                  <a href="https://x.com/?lang=en&mx=2" target="_blank" class="text-xs text-sky-950 duration-200 ease-in-out hover:md:ms-2 active:text-sky-900">Twitter</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr class="text-gray-400">
+          <div class="flex flex-1 items-center justify-between pt-2">
+            <div class="text-xs text-sky-900">© Wardiere Inc. All Rights Reserved 2023</div>
+            <div class="text-xs text-sky-900">Terms & Conditions</div>
+          </div>
+        </footer>
+      </div>
       </div>
     </section>
     <script>
