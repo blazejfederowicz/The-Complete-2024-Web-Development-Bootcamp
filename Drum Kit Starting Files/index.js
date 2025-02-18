@@ -1,10 +1,12 @@
 [...document.querySelectorAll(".drum")].map(e=> e.addEventListener('click',()=>{
     const buttonLetter = e.innerHTML;
     character(buttonLetter);
+    buttonAnimation(buttonLetter);
 }))
 
 document.addEventListener("keydown",(e)=>{
-    character(e.key)
+    character(e.key);
+    buttonAnimation(e.key);
 })
 
 const character= (letter)=>{
@@ -39,4 +41,12 @@ const character= (letter)=>{
             break;
         default: console.log(letter);
     }
+}
+
+const buttonAnimation = (letter) =>{
+    let anim = document.querySelector(`.${letter}`)
+    anim.classList.add("pressed");
+    setTimeout(() => {
+        anim.classList.remove("pressed");
+    }, 100);
 }

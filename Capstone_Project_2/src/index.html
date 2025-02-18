@@ -332,36 +332,31 @@ const <span class="text-indigo-400">HeroSection</span> = ({<span class="text-[#7
       </div>
       </div>
     </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script>
         const menu_button = document.querySelector('#menu-button');
         const user_button = document.querySelector('#user-menu-button'); 
 
-        menu_button.addEventListener('click', ()=>{
-            const mobile = document.querySelector('#mobile-menu');
-            const hamburger = document.querySelector('#hamburger');
-            const x = document.querySelector('#x');
-
-            if(!mobile.classList.contains('hidden')){
-                hamburger.classList.add('block');
-                hamburger.classList.remove('hidden');
-                x.classList.remove('block')
-                x.classList.add('hidden');
+        $("#menu-button").on('click', ()=>{
+            
+            if($("#mobile-menu").is(':visible')){
+                $("#hamburger").addClass('block');
+                $("#hamburger").removeClass('hidden');
+                $("#x").removeClass('block')
+                $("#x").addClass('hidden');
             }
             else{
-                x.classList.add('block');
-                x.classList.remove('hidden');
-                hamburger.classList.remove('block')
-                hamburger.classList.add('hidden');
+                $("#x").addClass('block');
+                $("#x").removeClass('hidden');
+                $("#hamburger").removeClass('block')
+                $("#hamburger").addClass('hidden');
             }
 
-            return mobile.classList.toggle('hidden')
+            return $("#mobile-menu").slideToggle('300')
         })
 
-        user_button.addEventListener('click', ()=>{
-            const menu = document.querySelector('#user-menu');
-            
-            return menu.classList.toggle('hidden')
-        })
+        $("#user-menu-button").on('click', ()=> $("#user-menu").toggle(300)
+        )
         
     </script>
 </body>
